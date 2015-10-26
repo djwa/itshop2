@@ -6,12 +6,25 @@ html {
 }
 
 header {
+    
+    nav {
+        ul {
+            li {
+                a {
+                        color: black!important;
+                }
+            }
+        }
+    }
+    
     .main-navbar {
 
     }
     .main-top-row {
+        @TOP_PADDING: 26px;
         .search-wrapper {
-            padding-top: 26px;
+            padding-top: @TOP_PADDING;
+            padding-right: 0;
             input {
                 border: 2px solid rgb(189,189,189);
                 border-radius: 4px 0 0 4px;
@@ -26,8 +39,36 @@ header {
                 }
             }
         }
+        .currency-wrapper {
+            padding: (@TOP_PADDING + 12px) 0 0 0;
+            form {
+                ul {
+                    padding:0;
+                    text-align:center;
+                    li {
+                        display: inline-block;
+                            height: 30px;
+                        button {
+                            text-transform: uppercase;
+                            color: black;
+                            padding: 0 7px;
+                        }
+                        &:first-child {
+                            button {
+                                border-right: 1px solid black;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         .shopping-container {
-            padding-top: 26px;
+            padding-top: @TOP_PADDING;
+            .cart-initial-button {
+                background: @BRAND_COLOR_1;
+                border-radius: 0;
+                color: white;
+            }
         }
     }
     .basic-menu {

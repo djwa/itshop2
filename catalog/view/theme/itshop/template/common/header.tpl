@@ -77,7 +77,7 @@
                     </div>
                     <div class="col-sm-5 search-wrapper"><?php echo $search; ?>
                     </div>
-                    <div class="col-sm-2"><?php echo $currency; ?>
+                    <div class="col-sm-2 currency-wrapper"><?php echo $currency; ?><?php echo $language; ?>
                     </div>
                     <div class="col-sm-3 shopping-container"><?php echo $cart; ?></div>
                 </div>

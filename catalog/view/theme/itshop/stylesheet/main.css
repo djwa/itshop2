@@ -6768,8 +6768,12 @@ html body {
   height: 100%;
   background: #f8f8f8;
 }
+header nav ul li a {
+  color: black!important;
+}
 header .main-top-row .search-wrapper {
   padding-top: 26px;
+  padding-right: 0;
 }
 header .main-top-row .search-wrapper input {
   border: 2px solid #bdbdbd;
@@ -6782,8 +6786,32 @@ header .main-top-row .search-wrapper span button {
   border: 1px solid #111111;
   border-radius: 0 4px 4px 0;
 }
+header .main-top-row .currency-wrapper {
+  padding: 38px 0 0 0;
+}
+header .main-top-row .currency-wrapper form ul {
+  padding: 0;
+  text-align: center;
+}
+header .main-top-row .currency-wrapper form ul li {
+  display: inline-block;
+  height: 30px;
+}
+header .main-top-row .currency-wrapper form ul li button {
+  text-transform: uppercase;
+  color: black;
+  padding: 0 7px;
+}
+header .main-top-row .currency-wrapper form ul li:first-child button {
+  border-right: 1px solid black;
+}
 header .main-top-row .shopping-container {
   padding-top: 26px;
+}
+header .main-top-row .shopping-container .cart-initial-button {
+  background: #54188c;
+  border-radius: 0;
+  color: white;
 }
 header .basic-menu {
   width: 100%;
